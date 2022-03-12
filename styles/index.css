@@ -1,7 +1,6 @@
 body{
     width: 100%;
-    height: auto;
-    margin: auto;
+    height: 100%;
 }
 
 ul li{
@@ -10,18 +9,38 @@ ul li{
 }
 
 .navigation{
-
     display: flex;
     justify-content: space-around
 }
 
 .parent-container{
-    height: 667px;
+    max-height: 667px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+   
+}
+
+.text-container  {
+    max-width: 480px;
+    max-height: 461px;
+}
+
+.text-title {
+    max-width: 416px;
+    max-height: 246px;
 }
 
 .title {
-    
+    font-size: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 102;
+}
+
+.text {
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 33px;
 }
