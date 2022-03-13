@@ -1,6 +1,7 @@
 body{
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 
 ul li{
@@ -11,36 +12,71 @@ ul li{
 .navigation{
     display: flex;
     justify-content: space-around
+
 }
 
 .parent-container{
+    max-height: 600px;
+    max-width: 1400px;
+    min-width: 500px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+
+.text-icon-container{
+    max-width: 600px;
     max-height: 667px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-   
+    justify-content: space-around;
 }
 
 .text-container  {
-    max-width: 480px;
-    max-height: 461px;
-}
-
-.text-title {
     max-width: 416px;
-    max-height: 246px;
+    max-height: 452px;
 }
 
 .title {
-    font-size: 90px;
+    font-size: 70px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    line-height: 102;
+    line-height: 102px;
 }
+
 
 .text {
     font-size: 22px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     line-height: 33px;
+}
+
+
+.recipe-image{
+    padding: 20px;
+    max-width: 600px;
+}
+
+.nav-icons{
+    max-width: 261px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color:black
+}
+
+.nav-icons a:link, a:visited {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color:black
 }
