@@ -84,3 +84,26 @@ ul li{
 .nav-icons a:hover {
 color: grey;
 }
+
+/*...........................Media queries.....................................*/
+@-ms-viewport{
+    width: device-width;
+  }
+
+
+@media screen and (max-width: 600px){
+    .parent-container{
+        max-width: 260px;
+        max-height: 560px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    
+    .parent-container{
+        max-width: 655px;
+        max-height: 990px;
+    }
+}

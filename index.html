@@ -16,7 +16,7 @@
                     <nav>
                         <div class="navigation">
                             <img src="images/Logo.svg" alt="logo">
-                            <ul>
+                            <ul class="nav-icons">
                                 <li><a href="">Works</a></li>
                                 <li><a href="">Services</a></li>
                                 <li><a href="">Contact</a></li>
@@ -26,19 +26,23 @@
                 </header>
                 <main>  
                     <div class="text-container">
-                    <div class="title">
+                        <div class="title">
                         <p >Recipes</p>
-                    </div>
+                        </div>
                         <div class="text">
                             <p>Fusce vehicula dolor arcu, sit amet blandit dolor 
                              mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
                         </div>
-                        </div>
-                    <div>
-                        <img src="images/Icon.svg" alt="arrow">
+                    </div>
+                    <div><img class="arrow" src="images/Icon.svg" alt="arrow">
                     </div>
                 </div>
-                <img class="recipe-image" src="images/recipe-big.png" alt="soup">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/recipe-small.png">
+                    <source media="(max-width: 800px )" srcset="images/recipe-medium.png">
+                    <source media="(min-width: 1001px)" srcset="images/recipe-big.png">
+                    <img class="recipe-image" src="images/recipe-big.png" alt="soup">
+                </picture>
              </div>
             </main> 
     </body>
