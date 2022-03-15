@@ -124,70 +124,13 @@ color: grey;
 }
 
 @media screen and (max-width: 600px){
-    li{
-        list-style-type: none;
-
-    }
-    
-    .parent-container{
-        max-width: 260px;
-        max-height: 560px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-    
-        
-    }
-.logo{
-    position: fixed;
-    left: 0;
-    top: 0;
-
-}
-    .navigation {
-        max-width: 258px;
-        margin: auto;
-        
-    }
-
-    .nav-icons{
-    display: none;
-}
-    .nav-icons a:link, a:visited {
-        color: black ;
-        text-decoration: none;
-    }
-    .nav-icons a{
-        float: none;
-        display: block;
-        text-align: left;
-        
-}
-
-    .dropdown:hover .nav-icons {
-    display: block;
-    float: left;
-    }
-
-    .nav-dots{
-        display: block;
-        position: absolute;
-        float: right;
-        right: 0;
-        top: 0;
-        padding-right: 40px;
-        padding-top: 50px;
-    }
     .title {
         font-size: 36px;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         line-height: 40px;
     }
-    
-    
+
     .text {
         max-width:211px;
         max-height: 49px;
@@ -198,9 +141,43 @@ color: grey;
         margin:auto
     }
 
-    .recipe-image{
-        display: flex;
-        justify-content: center;
+    .parent-container{
+        max-width: 480px;
+        margin: auto;
     }
 
+   .navigation{
+        overflow: hidden;
+        position: relative;
+    }
+
+    .nav-icons{
+        display: none;
+        position: absolute;
+        
+        
+    }
+
+    .navigation a{
+        float:left;
+    }
+
+    .nav-dots{
+        display: block;
+        float: right;
+        
+    }
+
+  .dropdown{
+    position: relative;
+    display: block;
+  }
+    .dropdown:hover .nav-icons{
+        display:block;
+        right: 0;
+    }
+
+.recipe-image{
+    margin-left:65px;
+}
 }
